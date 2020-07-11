@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h> // Biblioteca para permitir caracteres acentuados em português
+
+int main(){
+  setlocale(LC_ALL, "Portuguese"); 
+  int idade;
+  float altura;
+  float peso;
+  boolean estuda;
+  
+  printf("Qual a sua idade");
+  scanf("%d", &idade);
+  printf("Qual é o seu peso");
+  scanf("%.2f", &peso);
+  printf("Qual é a sua altura? ");
+  scanf("%.2f", &altura);
+  
+}
