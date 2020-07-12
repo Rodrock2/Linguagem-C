@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdin.h>
+
+int main(){
+  int valor1, valor2;
+  char operadorMatematico;
+  int resultadoOperacao;
+  
+  printf("Digite o primeiro valor: ");
+  scanf("%d", &valor1);
+  setbuf(stdin, NULL);
+  
+  printf("Digite o segundo valor: ");
+  scanf("%d", &valor2);
+  setbuf(stdin, NULL);
+  
+  printf("Escolha a operacao matematica que deseja fazer ( + - * / ): ");
+  scanf("%c", &operadorMatematico);
+  
+  if(operadorMatematico == '+'){
+    resultadoOperacao =  valor1 + valor2;
+  }
+  else if(operadorMatematico == '-'){
+    resultadoOperacao = valor1 - valor2;
+  }
+  else if(operadorMatematico == '*'){
+    resultadoOperacao = valor1 * valor2;
+  }
+  else if(operadorMatematico == '/'){
+    resutadoOperacao = valor1 / valor2;
+  }
+  else{
+    printf("O valor digitado nao eh um operador matematico valido");
+  }
+  printf("O Resultado da operacao eh %d", resultadoOperacao);
+  
+  return 0;
+}
