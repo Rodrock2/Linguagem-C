@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdin.h>
+#include<stdlib.h>
 
 int main(){
   int valor1, valor2;
@@ -27,7 +27,7 @@ int main(){
     resultadoOperacao = valor1 * valor2;
   }
   else if(operadorMatematico == '/'){
-    resutadoOperacao = valor1 / valor2;
+    resultadoOperacao = valor1 / valor2;
   }
   else{
     printf("O valor digitado nao eh um operador matematico valido");
